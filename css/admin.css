@@ -1,129 +1,125 @@
-main  {
-    padding: 0;
+main {
+  padding: 0;
 }
 
 .adminFilters {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    background-color: #f8eadc;
-    border-bottom: 2px solid #09251c;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: var(--sub-header-bg-color);
+  /* border-bottom: 2px solid #09251c; */
 }
 
-
 #searchForm {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 #searchInput {
-    flex: 1;
-    min-width: 0;
+  flex: 1;
+  min-width: 0;
 }
 
-#searchInput, .adminFilters select {
-    padding: 8px 10px;
-    font-size: 1rem;
-    border: 2px solid #09251c;
-    border-radius: 4px;
-    background-color: white;
+#searchInput,
+.adminFilters select {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 2px solid #09251c;
+  border-radius: 4px;
+  background-color: white;
 }
 
-#searchForm button, #addProductBtn {
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+#searchForm button,
+#addProductBtn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
 
 .adminList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 15px;
 }
 
-
 .adminCard {
-    padding: 10px;
+  padding: 10px;
 }
 
 .adminImage {
-    width: 100%;
-    max-width: var(--mobile-images-width);
-    height: auto;
+  width: 100%;
+  max-width: var(--mobile-images-width);
+  height: auto;
 }
-
 
 .adminButton {
-    width: 100%;
-    margin-top: 5px;
-    padding: 6px;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
 
 .adminDeleteButton {
-    background-color: #b00020;
+  background-color: #b00020;
 }
 
-
 .adminInput {
-    width: 100%;
-    margin-top: 5px;
-    padding: 6px 8px;
-    font-size: 1rem;
-    border: 2px solid #09251c;
-    border-radius: 4px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 6px 8px;
+  font-size: 1rem;
+  border: 2px solid #09251c;
+  border-radius: 4px;
 }
 
 #addProduct {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
 }
 
 #addProductForm {
-    background: white;
-    padding: 24px;
-    border-radius: 8px;
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
 }
 
 #addProductForm label {
-    display: block;
-    margin-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 #addProduct.hidden {
-    display: none;
+  display: none;
 }
 
 /* Mobil */
 @media (max-width: 767px) {
-    .adminList .card-root-container {
-        width: 100%;
-    }
+  .adminList .card-root-container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
-    .adminImage {
-        max-width: var(--tablet-desktop-images-width);
-    }
+  .adminImage {
+    max-width: var(--tablet-desktop-images-width);
+  }
 
-    .adminFilters {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+  .adminFilters {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #searchForm {
-        width: 350px;
-    }
+  #searchForm {
+    width: 350px;
+  }
 }

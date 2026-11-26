@@ -1,6 +1,7 @@
 :root {
   --mobile-images-width: 300px;
   --tablet-desktop-images-width: 350px;
+  --sub-header-bg-color: #a55704;
 }
 
 * {

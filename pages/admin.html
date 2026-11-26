@@ -10,44 +10,34 @@
   </head>
   <body>
     <header>
-    <div class="root-header">
-      E-commerce
-      <input type="checkbox" id="menu-toggle">
+      <div class="root-header">
+        E-commerce
+        <input type="checkbox" id="menu-toggle" />
 
-      <label for="menu-toggle" class="hamburger-menu">
+        <label for="menu-toggle" class="hamburger-menu">
           <span></span>
           <span></span>
           <span></span>
-      </label>
-      <nav>
-        <ul class="nav-links-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/catalog.html">Catalog</a></li>
-          <li><a href="../pages/favorites.html">Favorites</a></li>
-          <li><a href="../pages/cart.html">Cart</a></li>
-          <li><a href="../pages/admin.html">Admin</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="sub-header">Admin</div>
-  </header>
-    <main id="adminPageMain">
-
+        </label>
+        <nav>
+          <ul class="nav-links-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/catalog.html">Catalog</a></li>
+            <li><a href="../pages/favorites.html">Favorites</a></li>
+            <li><a href="../pages/cart.html">Cart</a></li>
+            <li><a href="../pages/admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sub-header">Admin</div>
       <aside class="adminFilters">
         <form id="searchForm">
-          <input
-            type="search"
-            id="searchInput"
-            placeholder="Search products"/>
-          <button type="submit">
-            Search
-          </button>
+          <input type="search" id="searchInput" placeholder="Search products" />
+          <button type="submit">Search</button>
         </form>
 
         <select name="filterDropDown" id="filterDropDown">
-          <option>
-            All
-          </option>
+          <option>All</option>
         </select>
 
         <select id="sortDropDown">
@@ -60,8 +50,8 @@
 
         <button type="button" id="addProductBtn">Add product</button>
       </aside>
-      
-
+    </header>
+    <main id="adminPageMain">
       <div id="adminPageLoading"></div>
       <div id="adminPageMessages"></div>
       <div id="adminPageContent" class="adminList"></div>
@@ -73,17 +63,17 @@
 
         <label>
           Title
-          <input type="text" id="newTitle" required/>
+          <input type="text" id="newTitle" required />
         </label>
 
         <label>
           Price
-          <input type="number" id="newPrice" min="0" step="0.01" required/>
+          <input type="number" id="newPrice" min="0" step="0.01" required />
         </label>
 
         <label>
           Image URL
-          <input type="url" id="newImage" required/>
+          <input type="url" id="newImage" required />
         </label>
 
         <label>

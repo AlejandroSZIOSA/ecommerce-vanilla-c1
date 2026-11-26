@@ -64,7 +64,7 @@ header {
 
 .sub-header {
   text-align: center;
-  background-color: #a55704;
+  background-color: var(--sub-header-bg-color);
   padding: 4px;
   z-index: 0;
 }
