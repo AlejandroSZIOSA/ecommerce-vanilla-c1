@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header-global.css" />
+    <link rel="stylesheet" href="../css/details.css" />
+  </head>
+  <body id="detailsPageBody">
+    <header>
+      <div class="root-header">
+        <div>E-commerce</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul class="nav-links-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/catalog.html">Catalog</a></li>
+            <li><a href="../pages/favorites.html">Favorites</a></li>
+            <li><a href="../pages/cart.html">Cart</a></li>
+            <li><a href="../pages/admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sub-header">Details</div>
+    </header>
+    <main>
+      <div class="spinner-container"></div>
+      <div class="messages-container"></div>
+      <div id="detailsPageContent">
+        <div class="details-page_desktop__inner-container">
+          <section class="details-page_intro-info__section">
+            <h2 id="detailsPageProductTitle"></h2>
+            <img id="detailsPageProductImage" src="" alt="Product Image" />
+          </section>
+          <section class="details-page_details-info__section">
+            <h3><strong>Description</strong></h3>
+            <p id="detailsPageProductDescription"></p>
+            <div class="details-page_extra-info__container"></div>
+            <p id="detailsPagePrice"></p>
+            <div class="details-page_buttons__container">
+              <button id="detailsPageAddFavoriteBtn">+ Favorite</button>
+              <button id="detailsPageAddToCartBtn">+ Cart</button>
+            </div>
+          </section>
+        </div>
+        <button id="detailsPageBackBtn">Back</button>
+      </div>
+    </main>
+    <script src="../js/details.js" type="module"></script>
+  </body>
+</html>

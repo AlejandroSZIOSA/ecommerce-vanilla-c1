@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header-global.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="root-header">
+        <div>E-commerce</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul class="nav-links-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/catalog.html">Catalog</a></li>
+            <li><a href="./pages/favorites.html">Favorites</a></li>
+            <li><a href="./pages/cart.html">Cart</a></li>
+            <li><a href="./pages/admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sub-header">Home</div>
+    </header>
+    <main id="homePageMain">
+      <div class="spinner-container"></div>
+      <div class="messages-container"></div>
+      <div id="homePageContent">
+        <section id="introSection">
+          <h2 class="home-page_intro-first__text">
+            The Vanilla E-commerce store
+          </h2>
+          <p class="home-page_intro-second__text">
+            Explore our products and find items for your needs.
+          </p>
+          <button id="homePageToCatalogBtn" class="home-page_to-catalog__btn">
+            To Catalog
+          </button>
+        </section>
+        <section>
+          <h2 id="productSectionTitle">Featured Products</h2>
+          <ol id="homePageProductsList"></ol>
+        </section>
+      </div>
+    </main>
+    <script src="./js/home.js" type="module"></script>
+  </body>
+</html>

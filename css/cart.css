@@ -1,0 +1,90 @@
+
+/* Produktkorten i varukorgen */
+.cart__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Totalpriset */
+.cart__total {
+    width: 100%;
+    text-align: center;
+}
+
+/* Till kassan-knappen */
+.cart__checkout-button {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Sammanfattning av varukorgen */
+.cart__summary {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Produktkort */
+.cart__card {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Produktbild */
+.cart__image {
+    width: 100%;
+    max-width: var(--mobile-images-width);
+    height: 300px;
+    object-fit: contain;
+}
+
+/* Behållare för plus- och minusknappar */
+.cart__quantity-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+/* Plus- och minusknappar */
+.cart__quantity-button {
+    cursor: pointer;
+}
+
+/* Ta bort-knappen */
+.cart__remove-button {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+/* Sidans rubrik */
+.cart__title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+    .cart__card {
+        width: 100%;
+    }
+}
+
+/* Surfplatta och dator */
+@media (min-width: 768px) {
+    .cart__card {
+        width: 300px;
+    }
+
+    .cart__image {
+        max-width: var(--tablet-desktop-images-width);
+    }
+}

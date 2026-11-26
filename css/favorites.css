@@ -1,0 +1,46 @@
+
+/* Lista med favoritprodukter */
+.favorites__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Ta bort-knappen */
+.favorites__remove-button {
+    width: 100%;
+}
+
+/* Sidans rubrik */
+.favorites__title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Produktbilder */
+.favorites__image {
+    width: 100%;
+    max-width: var(--mobile-images-width);
+    height: auto;
+}
+
+/* Innehållet i produktkortet */
+.favorites__inner {
+    padding: 10px;
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+    .favorites__list .card-root-container {
+        width: 100%;
+    }
+}
+
+/* Surfplatta och dator */
+@media (min-width: 768px) {
+    .favorites__image {
+        max-width: var(--tablet-desktop-images-width);
+    }
+}
