@@ -12,7 +12,7 @@
     <header>
       <div class="root-header">
         E-commerce
-        <input type="checkbox" id="menu-toggle">
+        <input type="checkbox" id="menu-toggle" />
 
         <label for="menu-toggle" class="hamburger-menu">
           <span></span>
@@ -30,24 +30,14 @@
         </nav>
       </div>
       <div class="sub-header">Catalog</div>
-    </header>
-    <main id="catalogPageMain">
-
       <aside class="catalogFilters">
         <form id="searchForm">
-          <input
-            type="search"
-            id="searchInput"
-            placeholder="Search products"/>
-          <button type="submit">
-            Search
-          </button>
+          <input type="search" id="searchInput" placeholder="Search products" />
+          <button type="submit">Search</button>
         </form>
 
         <select name="filterDropDown" id="filterDropDown">
-          <option>
-            All
-          </option>
+          <option>All</option>
         </select>
 
         <select id="sortDropDown">
@@ -58,10 +48,12 @@
           <option value="title-desc">Title: Z–A</option>
         </select>
       </aside>
+    </header>
+    <main id="catalogPageMain">
       <div id="catalogPageLoading" class="spinner-container"></div>
       <div id="catalogPageMessages"></div>
       <div id="catalogPageContent" class="catalogList"></div>
     </main>
-    <script src="../js/catalog.js"  type="module"></script>
+    <script src="../js/catalog.js" type="module"></script>
   </body>
 </html>
